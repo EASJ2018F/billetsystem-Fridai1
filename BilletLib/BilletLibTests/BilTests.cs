@@ -57,5 +57,31 @@ namespace BilletLib.Tests
 
             Assert.AreEqual(182.4, B.Pris());
         }
+        [TestMethod()]
+        public void ØresundPrisMedBroBizz()
+        {
+            Bil B = new Bil("asd", true, true);
+
+           
+
+            Assert.AreEqual(161, B.Pris());
+        }
+        [TestMethod()]
+        public void ØresundNavn()
+        {
+            Bil B = new Bil("asd", true, true);
+
+
+
+            Assert.AreEqual("Øresund Bil", B.Køretøj());
+        }
+
+        [TestMethod()]
+        public void ØresundPrisUdenBrobizz()
+        {
+            Bil B = new Bil("asd", false, true);
+
+            Assert.AreEqual(410, B.Pris());
+        }
     }
 }

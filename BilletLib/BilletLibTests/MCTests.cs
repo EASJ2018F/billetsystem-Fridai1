@@ -34,5 +34,27 @@ namespace BilletLib.Tests
 
             Assert.AreEqual(125 - 6.25, B.Pris());
         }
+        [TestMethod()]
+        public void ØresundKøretøjTest()
+        {
+            MC B = new MC("asd", false, true);
+
+            Assert.AreEqual("Øresund MC", B.Køretøj());
+        }
+
+        [TestMethod()]
+        public void ØresundPrisUdenBroBizz()
+        {
+            MC B = new MC("asd", false, true);
+
+            Assert.AreEqual(210, B.Pris());
+        }
+        [TestMethod()]
+        public void ØresundPrisMedBroBizz()
+        {
+            MC B = new MC("asd", true, true);
+
+            Assert.AreEqual(73, B.Pris());
+        }
     }
 }
