@@ -7,13 +7,17 @@ namespace BilletLib
         private string _nummerPlade;
         private DateTime _dato;
         private string _køreTøj;
-        private int _pris;
+        private double _pris;
+        private bool _broBizz;
+        
 
-        public Vehicle(string Køretøj, int pris, string Nummerplade)
+        public Vehicle(string Køretøj, double pris, string Nummerplade, bool BroBizz)
         {
             _køreTøj = Køretøj;
             _pris = pris;
             _nummerPlade = Nummerplade;
+            _broBizz = BroBizz;
+            _dato = new DateTime();
         }
 
         public string NummerPlade
@@ -21,16 +25,30 @@ namespace BilletLib
             get { return _nummerPlade; }
             set
             {
+                    _nummerPlade = value;
+
                 if (_nummerPlade.Length > 7)
-                {
+                { // det er ikke optimalt men det virker, det sletter altså den førhenværende for store nr plade og sætter den til null.
+                    _nummerPlade = null;
                     throw new ArgumentException("Der er indtastet mere end 7 karaktere i Nummerplade");
                 }
             }
         }
-        public DateTime Dato => _dato;
 
-        public int Pris()
+        public DateTime Dato
         {
+            get => _dato;
+            set => _dato = value;
+        } 
+
+        public bool BroBizz => _broBizz;
+
+        public virtual double Pris()
+        {
+            if (_broBizz)
+            {
+               return _pris - (_pris * 0.05);
+            }
             return _pris;
         }
 
@@ -38,5 +56,6 @@ namespace BilletLib
         {
             return _køreTøj;
         }
+
     }
 }
