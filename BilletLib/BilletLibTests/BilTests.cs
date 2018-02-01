@@ -39,11 +39,21 @@ namespace BilletLib.Tests
         }
 
         [TestMethod()]
-        public void WeekendRabat()
+        public void LørdagRabat()
         {
             Bil B = new Bil("asd", true);
 
             B.Dato = new DateTime(2018,2,3);
+
+            Assert.AreEqual(182.4, B.Pris());
+        }
+
+        [TestMethod()]
+        public void SøndagRabat()
+        {
+            Bil B = new Bil("asd", true);
+
+            B.Dato = new DateTime(2018, 2, 4);
 
             Assert.AreEqual(182.4, B.Pris());
         }
