@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilletLib", "BilletLib\BilletLib.csproj", "{98F79A40-3202-4267-A322-ED8409360D89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilletLibTests", "BilletLibTests\BilletLibTests.csproj", "{11BE6B87-7976-4B0E-8A3F-444E6DD91BC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98F79A40-3202-4267-A322-ED8409360D89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98F79A40-3202-4267-A322-ED8409360D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98F79A40-3202-4267-A322-ED8409360D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98F79A40-3202-4267-A322-ED8409360D89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11BE6B87-7976-4B0E-8A3F-444E6DD91BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BE6B87-7976-4B0E-8A3F-444E6DD91BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BE6B87-7976-4B0E-8A3F-444E6DD91BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BE6B87-7976-4B0E-8A3F-444E6DD91BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0DC15A8-A401-4FC1-8C2A-69DD2249E011}
+	EndGlobalSection
+EndGlobal
