@@ -2,30 +2,12 @@
 
 namespace BilletLib
 {
-    public class Bil
+    public class Bil : Vehicle
     {
-        private string _nummerPlade;
-        private DateTime _dato;
-        private string _køreTøj;
-        private int _pris;
-
-        public Bil()
+        public Bil(string Nummerplade) : base("Bil", 240, Nummerplade)
         {
-            _køreTøj = "Bil";
-            _pris = 240;
-        }
 
-        public string NummerPlade => _nummerPlade;
-        public DateTime Dato => _dato;
-
-        public int Pris()
-        {
-            return _pris;
-        }
-
-        public string Køretøj()
-        {
-            return _køreTøj;
         }
     }
+        
 }

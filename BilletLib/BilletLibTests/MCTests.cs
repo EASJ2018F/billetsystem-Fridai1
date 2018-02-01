@@ -14,7 +14,7 @@ namespace BilletLib.Tests
         [TestMethod()]
         public void PrisTest()
         {
-            MC B = new MC();
+            MC B = new MC("asd");
 
             Assert.AreEqual(125, B.Pris());
         }
@@ -22,7 +22,7 @@ namespace BilletLib.Tests
         [TestMethod()]
         public void KøretøjTest()
         {
-            MC B = new MC();
+            MC B = new MC("asd");
 
             Assert.AreEqual("MC", B.Køretøj());
         }

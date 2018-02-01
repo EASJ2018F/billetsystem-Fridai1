@@ -17,7 +17,7 @@ namespace BilletLib.Tests
         [TestMethod()]
         public void PrisTest()
         {
-            Bil B = new Bil();
+            Bil B = new Bil("asd");
 
             Assert.AreEqual(240, B.Pris());
         }
@@ -25,7 +25,7 @@ namespace BilletLib.Tests
         [TestMethod()]
         public void KøretøjTest()
         {
-            Bil B = new Bil();
+            Bil B = new Bil("asd");
 
             Assert.AreEqual("Bil", B.Køretøj());
         }
